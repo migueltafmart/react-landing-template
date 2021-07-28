@@ -1,0 +1,116 @@
+.Section {
+  min-width: 500px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 24px 0;
+  &:first-of-type {
+    margin-top: 80px;
+  }
+  &:nth-of-type(even) {
+    background: #ffffff;
+    color: dodgerblue;
+    & .Section__wrapper {
+      align-items: flex-end;
+    }
+  }
+  &:nth-of-type(odd) {
+    background: #6ab5ff;
+  }
+  &__wrapper {
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 64px 0;
+  }
+  &__Text .Text__body {
+    column-count: 3;
+  }
+  &__TextAndImage .TextAndImage__composer {
+    display: flex;
+    justify-content: space-between;
+    > * {
+      width: 45%;
+    }
+  }
+  &__Testimonials .Testimonial {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__Testimonials .Testimonial__name {
+    margin-bottom: 12px;
+  }
+  &__Testimonials .Testimonial__bio {
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  &__Testimonials .Testimonial__quote {
+    font-size: 18px;
+    font-style: italic;
+  }
+  &__Testimonials .Testimonial__image {
+    width: 136px;
+    height: 136px;
+    border-radius: 136px;
+  }
+  &__Testimonials .Testimonials__composer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    > * {
+      max-width: 30%;
+    }
+  }
+  &__SignupForm .SignupForm__body {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  &__SignupForm .SignupForm__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    * {
+      width: 48.5%;
+    }
+    label {
+      display: none;
+    }
+  }
+  &__Colaborators .Colaborators__composer {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  &__Colaborators .Colaborators__body {
+    width: 100%;
+    text-align: center;
+  }
+  &__Colaborators .Colaborators__img {
+    width: 112px;
+  }
+  &__Colaborators .Colaborators__card {
+    display: flex;
+    margin: 24px 40px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.Hero {
+  &__body {
+    font-size: 24px;
+  }
+}
+.Heading {
+  font-size: 48px;
+}
+.Section__Hero:first-of-type {
+  margin-top: 56px;
+}

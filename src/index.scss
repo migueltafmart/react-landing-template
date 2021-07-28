@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 960px;
+}
+.Primary-Button {
+  align-self: flex-end;
+  border: none;
+  border-radius: 6px;
+  background: dodgerblue;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  margin: 12px 0;
+  min-width: 72px;
+}
+input[type=text], input[type=email], input[type=password], input[type=tel]{
+  box-sizing: border-box;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+}
